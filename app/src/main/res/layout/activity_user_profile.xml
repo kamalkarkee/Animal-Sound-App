@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.UserProfile"
+    android:orientation="vertical"
+    android:background="@color/light_blue_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="#87ceff"
+        android:padding="20dp"
+        android:backgroundTint="@color/light_blue_main">
+
+        <TextView
+            android:id="@+id/username_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/username"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="421dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:hint="Full Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullName_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:hint="E-mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:hint="Birth Date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/birthdayi"
+                android:drawablePadding="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:hint="Phone Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNumber_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:hint="UTA ID">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/utaID_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/idnumber"
+                android:drawablePadding="12dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="update"
+            android:text="Edit profile"
+            android:backgroundTint="@color/light_blue_accent"/>
+        <Button
+            android:id="@+id/buttonDeleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="delete account"
+            android:backgroundTint="@color/light_blue_accent"/>
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:backgroundTint="@color/light_blue_accent"/>
+    </LinearLayout>
+
+</LinearLayout>
